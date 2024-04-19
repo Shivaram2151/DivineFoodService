@@ -1,4 +1,4 @@
-# Zosh Food
+# Divine Food
 
 1. **User:**
     - ID (Auto-generated)
