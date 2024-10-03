@@ -89,7 +89,7 @@ public class UserServiceImplementation implements UserService {
 		passwordResetTokenRepository.save(passwordResetToken);
 
 		// Send an email containing the reset link
-		sendEmail(user.getEmail(), "Password Reset", "Click the following link to reset your password: https://divinefoodservice-1.onrender.com/account/reset-password?token=" + resetToken);
+		sendEmail(user.getEmail(), "Password Reset", "Click the following link to reset your password: https://divine-food.vercel.app/account/reset-password?token=" + resetToken);
 	}
 	private void sendEmail(String to, String subject, String message) {
 		SimpleMailMessage mailMessage = new SimpleMailMessage();
