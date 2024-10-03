@@ -24,8 +24,8 @@ public class PaymentServiceImplementation implements PaymentService{
 	        SessionCreateParams params = SessionCreateParams.builder()
 	                .addPaymentMethodType(SessionCreateParams.PaymentMethodType.CARD)
 	                .setMode(SessionCreateParams.Mode.PAYMENT)
-	                .setSuccessUrl("http://localhost:3000/payment/success/"+order.getId())
-	                .setCancelUrl("http://localhost:3000/cancel")
+	                .setSuccessUrl("https://divinefoodservice-1.onrender.com/payment/success/"+order.getId())
+	                .setCancelUrl("https://divinefoodservice-1.onrender.com/cancel")
 	                .addLineItem(SessionCreateParams.LineItem.builder()
 	                        .setQuantity(1L)
 	                        .setPriceData(SessionCreateParams.LineItem.PriceData.builder()
@@ -40,7 +40,6 @@ public class PaymentServiceImplementation implements PaymentService{
 	        
 	        Session session = Session.create(params);
 	        
-	        System.out.println("session _____ " + session);
 	        
 	        PaymentResponse res = new PaymentResponse();
 	        res.setPayment_url(session.getUrl());

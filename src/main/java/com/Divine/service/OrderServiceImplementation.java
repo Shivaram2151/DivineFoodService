@@ -114,7 +114,7 @@ public class OrderServiceImplementation implements OrderService {
 	   
 
 	   
-	   PaymentResponse res=paymentSerive.generatePaymentLink(savedOrder);
+	   PaymentResponse res= paymentSerive.generatePaymentLink(savedOrder);
 	   return res;
 
 	}
