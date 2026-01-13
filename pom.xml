@@ -52,11 +52,19 @@
 <!--			<artifactId>mysql-connector-j</artifactId>-->
 <!--			<scope>provided</scope>-->
 <!--		</dependency>-->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.33</version> <!-- Use the latest stable version -->
-		</dependency>
+<!-- MySQL Dependencies (Commented Out for PostgreSQL Migration) -->
+<!--		<dependency>-->
+<!--			<groupId>mysql</groupId>-->
+<!--			<artifactId>mysql-connector-java</artifactId>-->
+<!--			<version>8.0.33</version>-->
+<!--		</dependency>-->
+
+        <!-- PostgreSQL Dependency -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -100,12 +108,12 @@
     		<artifactId>stripe-java</artifactId>
     		<version>20.62.0</version> <!-- Use the latest version available -->
 		</dependency>
-		<!-- Google Cloud SQL Socket Factory for MySQL -->
-		<dependency>
-			<groupId>com.google.cloud.sql</groupId>
-			<artifactId>mysql-socket-factory-connector-j-8</artifactId>
-			<version>1.13.1</version>
-		</dependency>
+		<!-- Google Cloud SQL Socket Factory (Commented Out) -->
+<!--		<dependency>-->
+<!--			<groupId>com.google.cloud.sql</groupId>-->
+<!--			<artifactId>mysql-socket-factory-connector-j-8</artifactId>-->
+<!--			<version>1.13.1</version>-->
+<!--		</dependency>-->
 		<dependency>
     		<groupId>org.springframework.boot</groupId>
    			<artifactId>spring-boot-starter-mail</artifactId>
