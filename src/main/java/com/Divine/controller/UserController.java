@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Divine.Exception.UserException;
 import com.Divine.model.User;
 import com.Divine.service.UserService;
-
 @RestController
 @RequestMapping("/api/users")
 public class UserController {

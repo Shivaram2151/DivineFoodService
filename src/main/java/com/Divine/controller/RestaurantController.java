@@ -13,7 +13,6 @@ import com.Divine.model.Restaurant;
 import com.Divine.model.User;
 import com.Divine.service.RestaurantService;
 import com.Divine.service.UserService;
-
 @RestController
 @RequestMapping("/api/restaurants")
 public class RestaurantController {

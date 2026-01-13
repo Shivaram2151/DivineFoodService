@@ -9,4 +9,6 @@ import com.Divine.model.Category;
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
 	public List<Category> findByRestaurantId(Long id);
+
+    public Category findByNameAndRestaurantId(String name, Long restaurantId);
 }
