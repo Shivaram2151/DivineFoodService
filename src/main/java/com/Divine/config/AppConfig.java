@@ -50,7 +50,8 @@ public class AppConfig {
                         "http://localhost:3000",
                         "https://divine-food.vercel.app",
                         "http://localhost:4200",
-                        "https://divine-food.vercel.app/"
+                        "https://divine-food.vercel.app/",
+                        "https://divine-food.shivaram.online"
                 ));
                 cfg.setAllowedMethods(Collections.singletonList("*"));
                 cfg.setAllowCredentials(true);
